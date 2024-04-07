@@ -1,6 +1,14 @@
 import React from 'react'
 import "./About.css"
 import { renderStars } from '../../componant/Star/renderStars';
+import c from "../../../public/c.svg"
+import java from "../../../public/java.webp"
+import Html from "../../../public/html.svg"
+import css from "../../../public/css.svg"
+import js from "../../../public/js.webp"
+import node from "../../../public/node.webp"
+import express from "../../../public/express.jpg"
+import react from "../../../public/react.webp"
 import Card from "../../componant/Card/Card"
 const About = () => {
   return (
@@ -43,7 +51,21 @@ const About = () => {
         content="I am eager to collaborate on exciting projects and gain valuable real-world experience. If you're looking for a passionate and driven web developer to join your team or contribute to your project, I'd love to connect and discuss how I can help."
         isSpecial={true} isleft={false} float={true}
       />
-      <div className=''></div>
+      <div className='Text2 isLeft floating'>
+        <h1>Known language</h1>
+        <hr></hr>
+        <div className='Images'>
+        <img src={c}></img>
+        <img src={java}></img>
+        <img src={Html}></img>
+        <img src={css}></img>
+        <img src={js}></img>
+        <img src={react}></img> 
+        <img src={node}></img> 
+        <img src={express}></img>
+        </div>
+        
+      </div>
 
     </div>
   )

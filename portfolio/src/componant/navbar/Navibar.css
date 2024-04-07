@@ -1,24 +1,38 @@
-.navbar
-{
-  display:flex;
-  flex-direction:row;
-  justify-content:space-between;
- 
+/* Navibar.css */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.menu ul
-{
-  display:flex;
-  flex-direction:row;
-  list-style:none;
+
+.logo img {
+  width: 90px;
+  height: 70px;
+  margin-left: 20px;
 }
-.menu ul li{
-  margin-right:100px;
-  font-size:24px;
-  margin-top:5px;
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
 }
-.logo img
-{
-  width:90px;
-  height:70px;
-  margin-left:20px;
+
+.menu ul li {
+  margin-right: 100px;
+  font-size: 24px;
+  margin-top: 5px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  
+}
+
+.menu ul li:hover {
+  transform: scale(1.5);
+}
+.menu ul li a:hover {
+  transform: none; 
 }

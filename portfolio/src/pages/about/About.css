@@ -1,7 +1,4 @@
 
-  
- 
-  
   .About {
     display: flex;
     flex-wrap: wrap;
@@ -9,6 +6,82 @@
     margin: auto;
     margin-top: 3%;
   }
+  .Text2
+  {
+    color:white;
+    border:2px solid white;
+    width:95.4%;
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    animation-fill-mode: both;
+    padding-bottom:20px;
+  }
+  .Text2 h1{
+    margin-bottom:2px;
+  }
+  .Text2 h1:hover{
+    transform: scale(1.5);
+  }
+  .Text2 hr {
+    border-color: grey;
+    width: 9%;
+    border-radius: 7px;
+    height: 3px;
+    background-color: grey;
+  }
+  .Images
+  {
+    display:grid;
+    width:50%;
+    height:20%;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    gap:10px;
+    /* border:2px solid red; */
+  }
+  img
+  {
+    width:70px;
+    height:70px;
+  }
+  .isLeft {
+    animation: comeFromLeft 1s forwards !important;
+  }
+  
+
+  
+  .floating {
+    animation:floating 3s ease-in-out infinite ;
+    margin-left: 30px;
+    margin-top: 5px;
+  }
+  
+  @keyframes floating{
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+  }
+  
+  @keyframes comeFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+  }
+  
+ 
   
   
   

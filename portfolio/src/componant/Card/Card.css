@@ -1,0 +1,101 @@
+.Text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid white;
+  width: 700px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  height: 200px;
+  animation-fill-mode: both;
+}
+.Text hr {
+  border-color: grey;
+  width: 9%;
+  border-radius: 7px;
+  height: 3px;
+  background-color: grey;
+}
+
+p {
+  color: white;
+  font-weight: 300;
+  border: none;
+  width: 430px;
+  font-weight: 200;
+}
+
+.Text h1:hover {
+  transform: scale(1.5);
+}
+
+
+
+.Text .floating .isLeft {
+  animation-name: comeFromLeft, floating;
+}
+
+/* Apply floating animation from right */
+.Text .floating .isRight {
+  animation-name:comeFromRight, floating;
+}
+
+.Text h1 {
+  color: white;
+  font-weight: 700;
+  margin: 0px;
+  margin-bottom: 3px;
+  width: 150px;
+}
+.special-card h1 {
+  width: 400px;
+  text-align: center;
+}
+.isLeft {
+  animation: comeFromLeft 1s forwards !important;
+}
+
+.isRight {
+  animation: comeFromRight 1s forwards !important;
+}
+
+.floating {
+  animation:floating 3s ease-in-out infinite ;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating{
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-15px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+@keyframes comeFromLeft {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes comeFromRight {
+  from {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}

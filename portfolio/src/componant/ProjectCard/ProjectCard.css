@@ -11,7 +11,7 @@
     border-radius:40px;
     /* box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.7); */
 }
-.ProjectCard:hover{
+.ProjectCard:active{
     transform:scale(1.1)
 }
 .ProjectCard img
@@ -39,7 +39,7 @@
 }
 .ProjectCard h1:hover::after
 {
-    animation:line 3s ease-in-out 0s ;
+    animation:line 3s ease-in-out 0s infinite;
 }
 @keyframes line
 {
@@ -58,4 +58,18 @@
         left:100%;
         width:0;
     }
+}
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
 }

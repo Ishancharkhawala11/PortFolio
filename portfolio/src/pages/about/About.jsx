@@ -51,7 +51,7 @@ const About = () => {
         content="I am eager to collaborate on exciting projects and gain valuable real-world experience. If you're looking for a passionate and driven web developer to join your team or contribute to your project, I'd love to connect and discuss how I can help."
         isSpecial={true} isleft={false} float={true}
       />
-      <div className='Text2 isLeft floating'>
+      <div className='Text2 Left float'>
         <h1>Known language</h1>
         <hr></hr>
         <div className='Images'>

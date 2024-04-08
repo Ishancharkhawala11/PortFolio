@@ -1,0 +1,14 @@
+.project
+{  display:flex;
+    /* align-items:center; */
+    justify-content:center;
+    /* width:1500px; */
+    /* border:2px solid red; */
+    margin:auto;
+    padding-top:2%;
+}
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap:50px;
+}

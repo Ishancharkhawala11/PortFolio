@@ -8,7 +8,7 @@ import { renderStars } from '../../componant/Star/renderStars'; // Adjust the pa
 const Home = () => {
   return (
     <div className='home'>
-      <NaviBar />
+     
       <div className="star">
         {renderStars()}
       </div>

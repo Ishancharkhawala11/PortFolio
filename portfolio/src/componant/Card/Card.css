@@ -1,3 +1,25 @@
+@keyframes comeFromLeft {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes comeFromRight {
+  from {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
 .Text {
   display: flex;
   justify-content: center;
@@ -53,11 +75,11 @@ p {
   text-align: center;
 }
 .isLeft {
-  animation: comeFromLeft 1s forwards !important;
+  animation: comeFromLeft 1s ease-in !important;
 }
 
 .isRight {
-  animation: comeFromRight 1s forwards !important;
+  animation: comeFromRight 1s ease-in !important;
 }
 
 .floating {
@@ -78,24 +100,3 @@ p {
   }
 }
 
-@keyframes comeFromLeft {
-  from {
-      transform: translateX(-100%);
-      opacity: 0;
-  }
-  to {
-      transform: translateX(0);
-      opacity: 1;
-  }
-}
-
-@keyframes comeFromRight {
-  from {
-      transform: translateX(100%);
-      opacity: 0;
-  }
-  to {
-      transform: translateX(0);
-      opacity: 1;
-  }
-}

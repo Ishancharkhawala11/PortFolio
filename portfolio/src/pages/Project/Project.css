@@ -12,3 +12,42 @@
     grid-template-columns: 1fr 1fr 1fr; 
     gap:50px;
 }
+@media (max-width:1290px)
+{
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr ; 
+        gap:50px;
+    }
+}
+@media (max-width:890px)
+{
+   .project{
+    margin-left:-30px;
+   }
+}
+@media (max-width:760px)
+{
+    .project{
+        margin-top:10%;
+    }
+    .card {
+        
+        gap:30px;
+    }
+}
+@media (max-width:610px)
+{
+    .project
+    {
+        margin-top:15%;
+    }
+}
+@media(max-width:530px)
+{
+    .card {
+       
+        grid-template-columns: 1fr; 
+        
+    }
+}

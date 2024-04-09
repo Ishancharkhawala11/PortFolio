@@ -18,12 +18,16 @@
     align-items:center;
     animation-fill-mode: both;
     padding-bottom:20px;
+     
   }
   .Text2 h1{
     margin-bottom:2px;
   }
   .Text2 h1:hover{
     transform: scale(1.5);
+  }
+  .Text2:hover{
+    transform: scale(1.1);
   }
   .Text2 hr {
     border-color: grey;
@@ -32,10 +36,7 @@
     height: 3px;
     background-color: grey;
   }
- .Text2:hover
- {
-  transform:scale(1.03);
- }
+ 
   .Images
   {
     display:grid;
@@ -54,6 +55,7 @@
   .Left {
     animation: comeFromLeft 1s forwards !important;
   }
+  
   .float {
     animation:floating 3s ease-in-out infinite ;
     margin-left: 30px;
@@ -83,11 +85,87 @@
     }
   }
   
- 
-  
-  
-  
-  
+  @media (max-width:1290px)
+  {
+    .Text2{
+      width:98%;
+      margin-left:10px;
+    }
+  }
+  @media(max-width:1040px)
+  {
+    .Images
+    {
+      
+      margin-left:0px;
+      /* border:2px solid red; */
+    }
+  }
+  @media(max-width:800px)
+  {
+    .Images
+    {
+      
+      margin-left:-100px;
+      gap:60px;
+      /* border:2px solid red; */
+    }
+  }
+  @media(max-width:760px)
+  {
+    .About
+    {
+      margin-top:15%;
+    }
+  }
+  @media(max-width:650px)
+  {
+    .Images
+    {
+      
+      margin-left:-150px;
+      gap:50px;
+      /* border:2px solid red; */
+    }
+  }
+  @media(max-width:590px)
+  {
+    .Images
+    {
+      
+      margin-left:-250px;
+      column-gap: 70px;
+      /* border:2px solid red; */
+    }
+  }
+  @media(max-width:550px)
+  {
+    
+    .Images
+    {
+      
+      margin-left:-200px;
+      column-gap: 40px;
+      /* border:2px solid red; */
+    }
+  }
+  @media(max-width:430px)
+  {
+    .Images
+    {
+      
+      margin-left:-190px;
+      column-gap: 20px;
+      /* border:2px solid red; */
+    }
+    .About
+    {
+      margin-top:25%;
+      /* border:2px solid red; */
+      margin-left:0px;
+      margin-right:0px;
+    }
+  }
   
  
   

@@ -27,6 +27,7 @@
     
      margin-top:50px;  
      position:relative;  
+     /* border:2px solid red; */
 }
 .ProjectCard h1::after
 {
@@ -76,4 +77,64 @@
     from { transform: translate(0,  0px); }
     65%  { transform: translate(0, 15px); }
     to   { transform: translate(0, -0px); }    
+}
+@media(max-width:1290px)
+{
+    .ProjectCard
+    {
+        width:350px;
+    }
+}
+@media (max-width:890px)
+{
+    .ProjectCard
+    {
+        width:300px;
+    }
+}
+@media (max-width:720px)
+{
+    .ProjectCard
+    {
+        width:250px;
+    }
+    .img
+{
+    width:150px;
+    height:100px;
+    /* border:2px solid red; */
+}
+}
+@media (max-width:610px)
+{
+    .ProjectCard
+    {
+        width:210px;
+    }
+    .img
+{
+    width:130px;
+    height:100px;
+    /* border:2px solid red; */
+}
+}
+@media(max-width:530px)
+{
+    .ProjectCard
+    {
+        width:300px;
+    }
+    .img
+{
+    width:200px;
+    height:150px;
+    /* border:2px solid red; */
+}
+}
+@media(max-width:530px)
+{
+    .ProjectCard
+    {
+        margin:0px;
+    }
 }

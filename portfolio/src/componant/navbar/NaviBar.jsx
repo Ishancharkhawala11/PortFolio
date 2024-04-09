@@ -1,12 +1,16 @@
-import React, { useState ,useEffect} from 'react';
+import React, { useState ,useEffect, useRef} from 'react';
 import { Link, useLocation } from 'react-router-dom'; 
 import './Navibar.css';
 import Ishan from "../../../public/ishan.png";
-
+import nav from "../../../public/mebu.svg"
 const NaviBar = () => {
   const location = useLocation(); 
   const [currentPage, setCurrentPage] = useState('');
-
+  const menu=useRef()
+  const d_toggle=()=>
+  {
+    menu.current.classList.toggle("visible")
+  }
   // Destructuring pathname from location
   const { pathname } = location;
 
@@ -27,7 +31,8 @@ const NaviBar = () => {
       <div className='logo'>
         <img src={Ishan} alt="logo" />
       </div>
-      <div className='menu'>
+      <img src={nav} className='nav' onClick={d_toggle}></img>
+      <div className='menu' ref={menu} >
         <ul>
           <li onClick={() => setCurrentPage('Home')}>
             <Link to="/">Home</Link>

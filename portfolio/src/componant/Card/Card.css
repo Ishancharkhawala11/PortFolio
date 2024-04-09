@@ -72,6 +72,7 @@ p {
   width: 150px;
 }
 .special-card h1 {
+  /* border:2px solid red; */
   width: 400px;
   text-align: center;
 }
@@ -100,4 +101,21 @@ p {
       transform: translateY(0);
   }
 }
+@media (max-width:1290px)
+{
+  .Text{
+    width:98%;
+    margin-left:10px;
+  }
+}
+@media(max-width:570px)
+{
 
+  .special-card h1
+  {
+    width:350px;
+  }
+  .Text h1:hover {
+    transform: scale(1.0);
+  }
+}

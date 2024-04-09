@@ -47,12 +47,13 @@ p {
   width: 430px;
   font-weight: 200;
 }
-
+.Text:hover
+{
+  transform:scale(1.03)
+}
 .Text h1:hover {
   transform: scale(1.5);
 }
-
-
 
 .Text .floating .isLeft {
   animation-name: comeFromLeft, floating;

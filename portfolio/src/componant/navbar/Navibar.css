@@ -28,12 +28,49 @@
 .menu ul li a {
   text-decoration: none;
   color: white;
-  
+
 }
 
 .menu ul li:hover {
   transform: scale(1.5);
+  /* animation: line 3s ease-in-out infinite; */
+
+  
 }
+.menu ul li hr {
+  border: none;
+  height: 1px;
+  background-color: grey; /* Setting line color to grey */
+  animation: Navibar_line 6s ease-in-out infinite;
+  position:relative;
+  height:4px;
+  border-radius:4px;
+}
+
 .menu ul li a:hover {
   transform: none; 
+}
+/* .line1{
+  background:grey;
+  position:relative;
+} */
+
+@keyframes Navibar_line
+{
+    0%
+    {
+        left:-50%;
+        width:0;
+    }
+  
+    50%
+    {
+        left:0;
+        width:100%;
+    }
+    100%
+    {
+        left:50%;
+        width:0;
+    }
 }

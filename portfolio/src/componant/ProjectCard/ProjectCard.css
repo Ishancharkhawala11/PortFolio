@@ -12,13 +12,19 @@
     /* box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.7); */
 }
 
-.ProjectCard img
+.img
 {
     width:200px;
     height:150px;
+    /* border:2px solid red; */
+}
+.ProjectCard img:hover
+{
+    transform:scale(1.3);
 }
 .ProjectCard h1
 {
+    
      margin-top:50px;  
      position:relative;  
 }

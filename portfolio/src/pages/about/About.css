@@ -32,6 +32,10 @@
     height: 3px;
     background-color: grey;
   }
+ .Text2:hover
+ {
+  transform:scale(1.03);
+ }
   .Images
   {
     display:grid;

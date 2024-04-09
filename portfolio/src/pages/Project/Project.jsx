@@ -1,7 +1,8 @@
 import React from 'react'
 import ProjectCard from '../../componant/ProjectCard/ProjectCard'
 import { renderStars } from '../../componant/Star/renderStars';
-import myntra from "../../../public/myntra.webp"
+
+import folder from "../../../public/folder.png"
 import "./Project.css"
 const Project = () => {
   return (
@@ -11,13 +12,13 @@ const Project = () => {
       </div>
       <div className='card'>
       <ProjectCard
-      title="Myntra" icon={myntra}></ProjectCard>
+      title="Portfolio" icon={folder} link="https://github.com/Ishancharkhawala11/PortFolio.git"></ProjectCard>
       <ProjectCard
-      title="Myntra" icon={myntra}></ProjectCard>
+      title="Myntra" icon={folder} link="https://github.com/Ishancharkhawala11/myntra.git"></ProjectCard>
       <ProjectCard
-      title="Myntra" icon={myntra}></ProjectCard>
+      title="Weather backend" icon={folder} link="https://github.com/Ishancharkhawala11/weatherBackend.git"></ProjectCard>
       <ProjectCard
-      title="Myntra" icon={myntra}></ProjectCard>
+      title="Ecom website" icon={folder} link="https://github.com/Ishancharkhawala11/EcomBackend.git"></ProjectCard>
       </div>
       
     </div>

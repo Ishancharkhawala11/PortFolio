@@ -110,7 +110,12 @@ p {
 }
 @media(max-width:570px)
 {
-
+  .Text h1
+  {
+    width:160px;
+    margin-top:10px;
+    border:2px solid red;
+  }
   .special-card h1
   {
     width:350px;
@@ -118,4 +123,5 @@ p {
   .Text h1:hover {
     transform: scale(1.0);
   }
+ 
 }

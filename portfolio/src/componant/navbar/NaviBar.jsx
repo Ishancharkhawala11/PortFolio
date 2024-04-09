@@ -1,37 +1,49 @@
-// NaviBar.js
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState ,useEffect} from 'react';
+import { Link, useLocation } from 'react-router-dom'; 
 import './Navibar.css';
-import Ishan from "../../../public/ishan.png"
+import Ishan from "../../../public/ishan.png";
 
 const NaviBar = () => {
- const [Hr, setHr] = useState("Home");
+  const location = useLocation(); 
+  const [currentPage, setCurrentPage] = useState('');
 
- // Function to handle click and toggle hr
+  // Destructuring pathname from location
+  const { pathname } = location;
 
+  // useEffect to update currentPage when pathname changes
+  useEffect(() => {
+    setCurrentPage(pathname.substring(1)); 
+  }, [pathname]);
+
+  // If pathname doesn't exist, set currentPage to 'Home'/
+  useEffect(() => {
+    if (pathname==='\/') {
+      setCurrentPage('Home');
+    }
+  }, []);
 
   return (
     <div className='navbar'>
       <div className='logo'>
-        <img src={Ishan} alt="logo"></img>
+        <img src={Ishan} alt="logo" />
       </div>
       <div className='menu'>
         <ul>
-          <li onClick={()=>{setHr("Home")}}>
+          <li onClick={() => setCurrentPage('Home')}>
             <Link to="/">Home</Link>
-            {Hr==="Home" && <hr  className='line1'/>}
+            {currentPage === 'Home' && <hr className='line1' />}
           </li>
-          <li onClick={()=>{setHr("about")}}>
+          <li onClick={() => setCurrentPage('about')}>
             <Link to="/about">About</Link>
-            {Hr==="about" && <hr  className='line1'/>}
+            {currentPage === 'about' && <hr className='line1' />}
           </li>
-          <li onClick={()=>{setHr("projects")}}>
-            <Link to="/projects" >Projects</Link>
-            {Hr==="projects" && <hr  className='line1'/>}
+          <li onClick={() => setCurrentPage('projects')}>
+            <Link to="/projects">Projects</Link>
+            {currentPage === 'projects' && <hr className='line1' />}
           </li>
-          <li onClick={()=>{setHr("resume")}}>
+          <li onClick={() => setCurrentPage('resume')}>
             <Link to="/resume">Resume</Link>
-            {Hr==="resume" && <hr className='line1'/>}
+            {currentPage === 'resume' && <hr className='line1' />}
           </li>
         </ul>
       </div>

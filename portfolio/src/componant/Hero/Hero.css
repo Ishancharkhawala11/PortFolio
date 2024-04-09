@@ -9,7 +9,7 @@
   
   .Hero{
     text-align: center;
-    animation: slideInLeft 1s forwards; /* Apply slide-in animation */
+    animation: slideInLeft 1s forwards; 
     /* border:2px solid red; */
     width:900px;
   }

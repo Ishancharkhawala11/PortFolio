@@ -56,12 +56,12 @@ p {
 }
 
 .Text .floating .isLeft {
-  animation-name: comeFromLeft, floating;
+  animation-name: comeFromLeft;
 }
 
 /* Apply floating animation from right */
 .Text .floating .isRight {
-  animation-name:comeFromRight, floating;
+  animation-name:comeFromRight;
 }
 
 .Text h1 {

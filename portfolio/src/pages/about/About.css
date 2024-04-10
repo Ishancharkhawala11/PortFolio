@@ -166,6 +166,11 @@
   }
   @media(max-width:500px)
   {
+    .Text2
+    {
+      margin-left:0px;
+      margin-right:0px;
+    }
     .Images
     { 
       margin-left:-200px;

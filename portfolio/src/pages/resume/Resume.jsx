@@ -1,6 +1,6 @@
 import React from "react";
 import { renderStars } from "../../componant/Star/renderStars";
-import resume from "../../../public/image.png";
+import resume from "../../../public/Screenshot 2024-12-09 154339";
 import pdf from "../../../public/Ishan resume.pdf"
 import "./Resume.css";
 const Resume = () => {

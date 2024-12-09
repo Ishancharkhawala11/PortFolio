@@ -19,6 +19,16 @@ const Project = () => {
       title="Weather backend" icon={folder} link="https://github.com/Ishancharkhawala11/weatherBackend.git"></ProjectCard>
       <ProjectCard
       title="Ecom website" icon={folder} link="https://github.com/Ishancharkhawala11/EcomBackend.git"></ProjectCard>
+      <ProjectCard
+      title="Jan suvidha" icon={folder} link="https://github.com/Ishancharkhawala11/project.git"></ProjectCard>
+      <ProjectCard
+      title="We Chat" icon={folder} link="https://github.com/Ishancharkhawala11/WeChat.git"></ProjectCard>
+      <ProjectCard
+      title="Food Delivery App" icon={folder} link="https://github.com/Ishancharkhawala11/Food-Delivery.git"></ProjectCard>
+      <ProjectCard
+      title="Contact App" icon={folder} link="https://github.com/Ishancharkhawala11/contact-app.git"></ProjectCard>
+    
+    
       </div>
       
     </div>
